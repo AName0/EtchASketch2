@@ -1,6 +1,8 @@
 const GRID_SPACE = 800;
 const grid = document.getElementById("grid");
 const body = document.querySelector("body");
+let gridSizeText = document.getElementById("grid-size-text");
+let gridSizeSlider = document.getElementById("grid-size-slider");
 let mouseIsDown;
 
 function createGrid(numOfRows) {
@@ -28,5 +30,11 @@ body.addEventListener("mousedown", function (e) {
 body.addEventListener("mouseup", function (e) {
     mouseIsDown = false;
 })
+
+gridSizeSlider.oninput = function() {
+    grid.innerHTML = "";
+    createGrid(this.value);
+    gridSizeText.textContent = `Grid Size: ${this.value}`;
+}
 
 createGrid(16);
