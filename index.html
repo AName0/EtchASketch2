@@ -7,18 +7,23 @@
         <script src=script.js defer></script>
     </head>
     <body>
-        <div class="sidebar">
-            <div id="header">Etch A Sketch</div>
-            <input type="color" id="pencil-color" value="#000000">
-            <input type="range" min="1" max="100" value="16" class="slider" id="grid-size-slider">
-            <p id="grid-size-text">Grid Size: 16</p>
-            <button class="normal">Normal mode</button>
-            <button class="random">Random Color mode</button>
-            <button class="eraser">Eraser</button>
-        </div>
-        <div id="grid-container">
-            <div id="grid">
+        <div class="main-body-container">
+            <div class="sidebar">
+                <div id="header">Etch A Sketch</div>
+                <input type="color" id="pencil-color" value="#000000">
+                <input type="range" min="1" max="100" value="16" class="slider" id="grid-size-slider">
+                <p id="grid-size-text">Grid Size: 16</p>
+                <button class="normal">Normal mode</button>
+                <button class="random">Random Color mode</button>
+                <button class="eraser">Eraser</button>
             </div>
+            <div id="grid-container">
+                <div id="grid">
+                </div>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="footer">Made by AName0</div>
         </div>
     </body>
 </html>
