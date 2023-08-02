@@ -1,0 +1,15 @@
+
+
+#grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 800px;
+    width: 800px;
+    outline: 2px solid red;
+}
