@@ -5,11 +5,13 @@ body {
     justify-content: center;
     margin: 0;
     gap: 32px;
+    min-height: 100vh;
 }
 
 .main-body-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 64px;
 }
 
@@ -33,12 +35,13 @@ body {
 #grid {
     display: flex;
     flex-wrap: wrap;
-    height: 800px;
-    width: 800px;
+    height: 600px;
+    width: 600px;
     outline: 1px solid black;
 }
 
 .footer-container {
+    margin-top: auto;
     background-color: grey;
 }
 

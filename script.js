@@ -1,4 +1,4 @@
-const GRID_SPACE = 800;
+const GRID_SPACE = 600;
 const grid = document.getElementById("grid");
 const body = document.querySelector("body");
 const normalModeButton = document.querySelector(".normal");
